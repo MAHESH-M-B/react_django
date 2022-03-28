@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import axios from 'axios'
 
-const baseurl='http://127.0.0.1:8000/api/tasks/'
+// const baseurl='http://127.0.0.1:8000/api/tasks/'
 
 
 export default function Login() {
@@ -27,7 +27,7 @@ export default function Login() {
     signupData.append('password',signup.password)
 
     try{
-      axios.post(baseurl,signupData).then((response)=>{
+      axios.post('http://127.0.0.1:8000/api/tasks/',signupData).then((response)=>{
         console.log(response.data);
        })
     }catch(error){
