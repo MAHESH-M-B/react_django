@@ -38,29 +38,26 @@ export default function Login() {
 
   return (
     <div>
-      <div className="signupParentDiv">
         
         <form  >
-          <label htmlFor="fname">Username</label>
-          <br />
+          <label>Username</label>
           <input
-            className="input"
             type="text"
             onChange={ Handlechange}
             name="username"
           />
           <br />
+          <label>password</label>
+
           <input
-            className="input"
             type="password"
             onChange={ Handlechange}
             name="password" 
-          />password
+          />
           <br />
           <br />
           <button   onClick={submit}>Signup</button>
         </form>
-      </div>
       
     </div>
   );
