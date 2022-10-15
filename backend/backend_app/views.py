@@ -1,8 +1,8 @@
 from django.shortcuts import render
-
 from rest_framework import viewsets
-from .serializers import backend_appSerializer
+
 from .models import backend_app
+from .serializers import backend_appSerializer
 
 # Create your views here.
 
